@@ -29,7 +29,7 @@ scrape_configs:
       - targets: ["localhost:9090"]
 
 
-  - job_name: "Docker"
+  - job_name: "cadvisor"  #eventhough its a name but we are tracking cadvisor which ultimately reads docker metrics.
     static_configs:
       - targets: ["cadvisor:8080"]
 
